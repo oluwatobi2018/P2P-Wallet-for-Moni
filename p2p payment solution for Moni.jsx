@@ -172,9 +172,6 @@ onclose; function ();
 customizations;
 title; 'P2P Payment Solution Demo';
 description; 'A payment solution for seamless transactions';
-</script>;
-</body>;
-</html>;
 
 
 
