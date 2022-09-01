@@ -171,7 +171,7 @@ onclose; function ();
 //Close Modal
 customizations;
 title; 'P2P Payment Solution Demo';
-description; 'A payment solution for seamless transactions';
+description; 'A payment solution for seamless transactions'
 
 
 
