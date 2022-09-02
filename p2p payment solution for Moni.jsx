@@ -175,8 +175,8 @@ tx_ref:'hooli-t-1920bbtyt';
             // close modal
           },
           customizations: {
-            title: "Flutterwave Demo",
-            description: "Flutterwave Payment Demo",
+            title: "paystack Demo",
+            description: "paystack Payment Demo",
             logo: "https://cdn.iconscout.com/icon/premium/png-256-thumb/payment-2193968-1855546.png",
           },
         });
