@@ -141,7 +141,7 @@ module.exports= mongoose.model('Transaction', transactionSchema);
 tx_ref:'hooli-t-1920bbtyt';
 ;
 '<!DOCTYPE html>'
-<html;'lang'= 'e'
+<html;'lang'= 'English'
 <head>
     <meta charset="UTF-8"/>;
     <meta name= 'Viewport' content='width=device-width, initialscale= 1.0' />;
