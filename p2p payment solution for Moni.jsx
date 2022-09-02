@@ -151,8 +151,8 @@ tx_ref:'hooli-t-1920bbtyt';
 <button type='button' onClick= 'Make Payment()'>Pay Now</button>;
 <script>
       function makePayment() {
-        FlutterwaveCheckout({
-          public_key: "YOUR_PUBLIC_KEY_HERE",
+        PaystackCheckout({
+          public_key: "pk_test_f1bdf35e9e5abf840a7caaeefe6b6de5ed387d,SECRET KEY sk_test_9369f28cc8a60025ccf2a058216b7d51932f0b0f",
           tx_ref: "hooli-tx-1920bbtyt",
           amount: 1000,
           currency: "NGN",
