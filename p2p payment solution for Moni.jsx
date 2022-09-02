@@ -353,3 +353,41 @@ app.get("/response", async (req, res) => {
 });
 
 //...
+//...
+
+app.get("/wallet/:userId/balance", async (req, res) => {
+  try {
+    const { userId } = req.params;
+
+    const wallet = await Wallet.findOne({ userId });
+    // user
+    res.status(200).json(wallet.balance);
+  } catch (err) {
+    console.log(err);
+  }
+});
+
+//...
+//...
+
+app.get("/response", async (req, res) => {
+  const { transaction_id } = req.query;
+
+  //...
+
+  const { status, currency, id, amount, customer } = response.data.data;
+
+  // check if transaction id already exist
+  const transactionExist = await Transaction.findOne({ transactionId: id });
+
+  if (transactionExist) {
+    return res.status(409).send("Transaction Already Exist");
+  }
+
+  //...
+
+  return res.status(200).json({
+    response: "wallet funded successfully",
+    data: wallet,
+  });
+});
