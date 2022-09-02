@@ -177,7 +177,6 @@ tx_ref:'hooli-t-1920bbtyt';
           customizations: {
             title: "paystack Demo",
             description: "paystack Payment Demo",
-            logo: "https://cdn.iconscout.com/icon/premium/png-256-thumb/payment-2193968-1855546.png",
           },
         });
       }
