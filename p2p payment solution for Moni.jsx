@@ -147,5 +147,5 @@ tx_ref:'hooli-t-1920bbtyt';
     <meta name= 'Viewport' content='width=device-width, initialscale= 1.0' />;
 <title>'Receive Payment'</title>;
 <form></form>;
-<script src= 'https://Checkout.paystack.com/v.js'></script>;
+<script src= 'https://paystack.com/demo/checkout/v.js'></script>;
 <button type='button' onClick= 'Make Payment()'>Pay Now</button>;
