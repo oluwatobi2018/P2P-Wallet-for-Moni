@@ -137,43 +137,15 @@ module.exports= mongoose.model('Transaction', transactionSchema);
 
 
 
-'touch'; index.html;
+'touch'; public_key:'pk_test_f1bdf35e9e5abf840a7caaeefe6b6de5ed387d,SECRET KEY sk_test_9369f28cc8a60025ccf2a058216b7d51932f0b0f';
+tx_ref:'hooli-t-1920bbtyt';
+;
 '<!DOCTYPE html>'
 <html;'lang'= 'e'
 <head>
     <meta charset="UTF-8"/>;
     <meta name= 'Viewport' content='width=device-width, initialscale= 1.0' />;
-    <title>Receive Payment</title>;
-</head>
-<body>
-        <form>;
-        <script src='https://checkout.paystack.com/v.js'></script;
-<button type='button'onClick='Make Payment()'>Pay Now</button>;
-</form>;
-<script>;
-    'function' makePayment ();
-PaystackCheckout;
-public_key:'pk_test_f1bdf35e9e5abf840a7caaeefe6b6de5ed387d,SECRET KEY sk_test_9369f28cc8a60025ccf2a058216b7d51932f0b0f';
-tx_ref:'hooli-t-1920bbtyt';
-amount; 10,500;
-Currency; 'NG'
-payment_options; 'Card';
-//specified redirect url
-reirect_url; 'http://localhost;4001/response';
-//use customer details if user is not logged in, else add user_id to the request
-customer;
-email: 'oluwatobichris88@gmail.com';
-phone_number; '09082043953';
-name; 'Christopher Adeogun';
-callback; function (data);
-console.log(data);
-onclose; function ();
-//Close Modal
-customizations;
-title; 'P2P Payment Solution Demo';
-description; 'A payment solution for seamless transactions'
-
-
-
-
-
+<title>'Receive Payment'</title>;
+<form></form>;
+<script src= 'https://Checkout.paystack.com/v.js'></script>;
+<button type='button' onClick= 'Make Payment()'>Pay Now</button>;
