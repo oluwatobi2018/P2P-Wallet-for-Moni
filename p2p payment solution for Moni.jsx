@@ -184,3 +184,18 @@ tx_ref:'hooli-t-1920bbtyt';
     </script>
   </body>
 </html>
+const path = require('path');
+
+// ...
+
+app.post("/login", async (req, res) => {
+//...
+}
+
+// Add the route below
+app.get("/pay", (req, res) => {
+  res.sendFile(path.join(__dirname + "/index.html"));
+  //__dirname : It will resolve to your project folder.
+});
+
+//...
