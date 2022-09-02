@@ -8,7 +8,7 @@ PaymentMethodChangeEvent.connect('mongodb://localhost:27017/online_payment')
 mkdir, <wallet-demo-with-paystack></wallet-demo-with-paystack>
 init -yield
 'mkdir'; modelconfig
-touch; config/database.js; model ;/wallet.js model;/wallet_transaction. js;'model';/transction. js model;/user.js
+touch; config/database.js; model ;/wallet.js model;/wallet_transaction. js;'model';/transaction. js model;/user.js
 'touch'; app.js ;index.js
 npm; install; jsonwebtoken; doyenv; mongoose; express; bcryptjs
 const mongoose= require("mongoose");
