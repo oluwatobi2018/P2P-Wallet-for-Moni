@@ -149,3 +149,38 @@ tx_ref:'hooli-t-1920bbtyt';
 <form></form>;
 <script src= 'https://paystack.com/demo/checkout/v.js'></script>;
 <button type='button' onClick= 'Make Payment()'>Pay Now</button>;
+<script>
+      function makePayment() {
+        FlutterwaveCheckout({
+          public_key: "YOUR_PUBLIC_KEY_HERE",
+          tx_ref: "hooli-tx-1920bbtyt",
+          amount: 1000,
+          currency: "NGN",
+          country: "NG",
+          payment_options: "card",
+
+          // specified redirect URL
+          redirect_url: "http://localhost:4001/response",
+
+          // use customer details if user is not logged in, else add user_id to the request
+          customer: {
+            email: "demomail@gmail.com",
+            phone_number: "08088098622",
+            name: "Idris Olubisi",
+          },
+          callback: function (data) {
+            console.log(data);
+          },
+          onclose: function () {
+            // close modal
+          },
+          customizations: {
+            title: "Flutterwave Demo",
+            description: "Flutterwave Payment Demo",
+            logo: "https://cdn.iconscout.com/icon/premium/png-256-thumb/payment-2193968-1855546.png",
+          },
+        });
+      }
+    </script>
+  </body>
+</html>
