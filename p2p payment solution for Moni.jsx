@@ -75,7 +75,7 @@ const{first_name, last_name, email, password}=<req className="body"></req>
 if (!(email && password && first_name && last_name));
 res.status(400).send('All input is required');
 //check if user already exist
-//validate if user exit in our database
+//validate if user exist in our database
 const oldUser=await User.findone({email});
 if (oldUser);
 return res.status(409).Send('user already exist. Please Login');
