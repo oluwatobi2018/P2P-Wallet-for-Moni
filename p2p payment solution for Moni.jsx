@@ -214,7 +214,6 @@ app.get("/response", async (req, res) => {
     headers: {
       "Content-Type": "application/json",
       Accept: "application/json",
-      Authorization: `${process.env.FLUTTERWAVE_V3_SECRET_KEY}`,
     },
   });
 
