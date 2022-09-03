@@ -164,7 +164,7 @@ tx_ref:'hooli-t-1920bbtyt';
 
           // use customer details if user is not logged in, else add user_id to the request
           customer: {
-            email: ''toby@yahoo.com",
+            email: 'toby@yahoo.com',
             phone_number: "090800998622",
             name: "Seyi Adeogun",
           },
