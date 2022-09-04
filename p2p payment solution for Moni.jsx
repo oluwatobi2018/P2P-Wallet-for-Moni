@@ -8,7 +8,7 @@ PaymentMethodChangeEvent.connect('mongodb://localhost:27017/online_payment')
 mkdir, <wallet-demo-with-paystack></wallet-demo-with-paystack>
 init -yield
 'mkdir'; modelconfig
-touch; config/database.js; model ;/wallet.js model;/wallet_transaction. js;'model';/transaction. js model;/user.js
+touch; config/database.js; model ;/wallet.js model;/wallet_transaction. js;'model';/transction. js model;/user.js
 'touch'; app.js ;index.js
 npm; install; jsonwebtoken; doyenv; mongoose; express; bcryptjs
 const mongoose= require("mongoose");
@@ -74,8 +74,8 @@ const{first_name, last_name, email, password}=<req className="body"></req>
 //validate user input
 if (!(email && password && first_name && last_name));
 res.status(400).send('All input is required');
-//check if user already exists
-//validate if user exists in our database
+//check if user already exist
+//validate if user exit in our database
 const oldUser=await User.findone({email});
 if (oldUser);
 return res.status(409).Send('user already exist. Please Login');
@@ -137,22 +137,23 @@ module.exports= mongoose.model('Transaction', transactionSchema);
 
 
 
-'touch'; public_key:'pk_test_f1bdf35e9e5abf840a7caaeefe6b6de5ed387d';'sk_test_9369f28cc8a60025ccf2a058216b7d51932f0b0f';
+'touch'; public_key:'pk_test_f1bdf35e9e5abf840a7caaeefe6b6de5ed387d,SECRET KEY sk_test_9369f28cc8a60025ccf2a058216b7d51932f0b0f';
 tx_ref:'hooli-t-1920bbtyt';
 ;
 '<!DOCTYPE html>'
-<html;'lang'= 'English'
+<html;'lang'= 'e'
 <head>
     <meta charset="UTF-8"/>;
     <meta name= 'Viewport' content='width=device-width, initialscale= 1.0' />;
 <title>'Receive Payment'</title>;
 <form></form>;
-<script src= 'https://paystack.com/demo/checkout/v.js'></script>;
+<script src= 'https://Checkout.paystack.com/v.js'></script>;
 <button type='button' onClick= 'Make Payment()'>Pay Now</button>;
-<script>
-      function makePayment() {
+
+
+
+function makePayment() {
         PaystackCheckout({
-         'touch'; public_key: "pk_test_f1bdf35e9e5abf840a7caaeefe6b6de5ed387d','sk_test_9369f28cc8a60025ccf2a058216b7d51932f0b0f';
           tx_ref: "hooli-tx-1920bbtyt",
           amount: 1000,
           currency: "NGN",
@@ -180,27 +181,24 @@ tx_ref:'hooli-t-1920bbtyt';
           },
         });
       }
-    </script>
-  </body>
-</html>
-const path = require('path');
+'const' ;path = require('path');
 
 // ...
 
-app.post("/login", async (req, res) => {
+;app.post("/login", async (req, res) => {
 //...
 }
 
 // Add the route below
-app.get("/pay", (req, res) => {
+,app.get("/pay", (req, res) => {
   res.sendFile(path.join(__dirname + "/index.html"));
   //__dirname : It will resolve to your project folder.
-});
+}
 
 //...
 //...
 
-app.get("/response", async (req, res) => {
+,app.get("/response", async (req, res) => {
   const { transaction_id } = req.query;
 
   // URL with transaction ID of which will be used to confirm transaction status
@@ -217,13 +215,12 @@ app.get("/response", async (req, res) => {
   });
 
   console.log(response.data.data)
-});
+}
 //...
 
-// importing user context
-const User = require("./model/user");
+//importing user context 'const' ;'User' = require("./model/user")
 
-const Wallet = require("./model/wallet");
+const Wallet = require("./model/wallet")
 const WalletTransaction = require("./model/wallet_transaction");
 const Transaction = require("./model/transaction");
 
